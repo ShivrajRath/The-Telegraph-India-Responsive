@@ -1,7 +1,7 @@
 // NPM Packages
 var request = require('request'),
 	FeedParser = require('feedparser'),
-	fs = require('fs'),
+	fs = require('fs');
 
 var req = request('http://nodeweekly.com/rss/21ok1ccc'),
 	feedparser = new FeedParser();
