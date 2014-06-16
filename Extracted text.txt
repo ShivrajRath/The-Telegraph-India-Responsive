@@ -1,0 +1,417 @@
+Extracted text
+
+Node Weekly Issue 39 - June 12, 2014
+    
+        body {
+            -webkit-text-size-adjust:none;
+            -ms-text-size-adjust:none;
+            margin:0; padding:0;
+            font-family: 'helvetica neue', helvetica, arial, sans-serif;
+        }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+        table {border-spacing:0;}
+        table td {border-collapse:collapse;}
+        @media screen and (max-width: 600px) {
+            table[class="container"] {
+                width: 98% !important;
+            }
+            .aright, .aright TD {
+                text-align: left !important;
+                float: none;
+            }
+            td[class='block'] { display: block !important; float: none !important; text-align: left; width: auto; }
+            .aright {
+               padding-top: 8px;
+            }
+            .p14 { padding-left: 0px !important; padding-right: 0px !important; margin-left: 0px !important; margin-right: 0px !important;  }
+            .iimg { display: none; }
+        }
+    
+
+
+
+  
+    
+      
+        
+            
+                
+                    
+                        
+                            This week's Node news
+                        
+                        
+                            Read this issue on the Web
+                        
+                    
+                
+            
+        
+      
+      
+        
+            
+                
+                    
+                        
+                            Node Weekly
+                        
+                        
+                            Issue 39June 12, 2014
+                        
+                    
+                
+            
+        
+       
+          
+				 Featured
+				
+                
+                    
+                        
+                            
+                              Notes from the Road — 
+An update from Node’s project lead, TJ Fontaine, on the team’s efforts to travel around and engage with Node users on their home turf.
+
+                            
+                        
+                        
+                            
+                              TJ Fontaine
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              Broadening Node.js Contributions — 
+Bryan Cantrill reflects on some changes to the process behind contributing to the Node.js codebase. Until now, contributors have had to sign a CLA (Contributor License Agreement) but this requirement has now been removed, making it easier to get involved.
+
+                            
+                        
+                        
+                            
+                              Joyent
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              Real-Time Chat With Node.js' Readline and Socket.io — 
+A tutorial by Matt Harzewski on using the readline module to create a powerful(ish) terminal-based prompt that you can then build a chat system on top of.
+
+                            
+                        
+                        
+                            
+                              Nettuts+
+                            
+                        
+                    
+                
+            
+				 From our Sponsor
+				
+                
+                    
+                        
+                            
+                              NodePing has everything you need to monitor your web app. 
+                            
+                        
+                        
+                            
+HTTP and JSON content verification, WebSocket/Socket.io, SSL, DNS, FTP, PING, and more with full API. 200 monitors at 1 minute intervals for just $15/month includes all the alerts you need via SMS, email, Pushover, webhooks, twitter, etc. Free 15-day trial.
+                            
+                        
+                        
+                            
+                              NodePing
+                            
+                        
+                    
+                
+                    
+                
+            
+				 Reading
+				
+                
+                    
+                        
+                            
+                              Seven Things You Should Stop Doing with Node.js — 
+More of a conversation starter than a set of strict rules. Items include stopping using callbacks, console.log, semicolons (uh-oh!), comma first style, and more.
+
+                            
+                        
+                        
+                            
+                              Azat Mardan
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              A Quick Interview with TJ Fontaine, Node.js Core Team Leader 
+                            
+                        
+                        
+                            
+                              Modulus
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              Create a TV Show Tracker using AngularJS, Node.js and MongoDB — 
+A superbly thorough and well-presented tutorial. It goes all the way from starting a new Express project through to deploying it on Heroku.
+
+                            
+                        
+                        
+                            
+                              Sahat Yalkabov
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              Receiving Emails with Node using Mailin 
+                            
+                        
+                        
+                            
+                              DailyJS
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              Automating Web Performance Measurement With PSI For Node 
+                            
+                        
+                        
+                            
+                              Addy Osmani
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              Convention-based, Modular MVC with Shared Rendering in Node.js — 
+Nicolas Bevacqua discusses the reasons he created the Taunus framework, what makes it different and how it works.
+
+                            
+                        
+                        
+                            
+                              Flippin' Awesome
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              Laser Intrusion Detection with Johnny-Five on Node.js — 
+Rick Waldron hooks up a laser to JavaScript using Node and Arduino.
+
+                            
+                        
+                        
+                            
+                              Bocoup
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              Controlling a Relay with Johnny-Five on Node.js — 
+Another practical article by Rick Waldron.
+
+                            
+                        
+                        
+                            
+                              Bocoup
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              The Emperor’s New Clothes Were Built with Node.js — 
+Emotions run high in both the pro- and anti-Node camps, Eric takes a saner look at some of the arguments around using it.
+
+                            
+                        
+                        
+                            
+                              Eric Jiang
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              Node Hardware Hacking with Tessel 
+                            
+                        
+                        
+                            
+                              DailyJS
+                            
+                        
+                    
+                
+            
+				 Libraries, Code and Tools
+				
+                
+                    
+                        
+                            
+                              BridJS: Bind Any C Functions and Structures Without Writing Any Extra Native Code — 
+A BridJ-like API for runtime binding of C functions and structs without writing any extra native code.
+
+                            
+                        
+                        
+                            
+                              Olivier Chafik and Jia-Han Su
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              somewhere.js: A Small JSON File Database for Node.js 
+                            
+                        
+                        
+                            
+                              David Rey
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              bud: A Minimalistic Task Manager 
+                            
+                        
+                        
+                            
+                              Azer Koçulu
+                            
+                        
+                    
+                
+            
+				
+                
+                    
+                        
+                            
+                              node-drawille: Drawing in the Terminal with Unicode Braille Characters 
+                            
+                        
+                        
+                            
+                              Bence Dányi
+                            
+                        
+                    
+                
+            
+				 Last but not least..
+				
+                
+                    
+                        
+                            
+                              We've Gone Global: Apply Today to Hack Reactor Remote — 
+Previously only in San Francisco, attend the “Harvard” of Coding Schools wherever you are.  Limited half-scholarships being offered, classes start July 21st, recommended application deadline: June 24th.
+
+                            
+                        
+                        
+                            
+                              Hack Reactor  Sponsored
+                            
+                        
+                    
+                
+            
+          
+        
+        
+            
+                
+                    
+                        
+                            Published by Cooper Press.Want to sponsor an issue? See our media kit.
+© 2014 Cooper Press Ltd. Email policy Privacy policyOffice 30, Fairfield Enterprise Centre, Louth, LN11 0LS, UK"Node.js" is a trademark owned by Joyent, Inc.The term "Node" is used with Joyent, Inc.'s kind permission.
+                        
+                        
+                            Update your email addressor unsubscribe here

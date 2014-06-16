@@ -42,7 +42,7 @@ feedparser.on('readable', function(){
 
 	// Write to the the text file till writeable ends
 	while(item = stream.read()){
-		fs.appendFile('write.txt', JSON.stringify(item), function (err) {
+		fs.appendFile('write.json', JSON.stringify(item), function (err) {
 			if (err){
 				console.log('Error in writing file' + err);
 			}else{
