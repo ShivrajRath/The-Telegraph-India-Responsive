@@ -3,19 +3,6 @@ var read = require('node-readability');
 (function () {
     'use strict';
 
-    function getHTML(url, callback) {
-        read(url, function (err, article) {
-            if (err) {
-                callback(err);
-            }
-            // Main Article
-            console.log(article.content);
-
-            // Close article to clean up jsdom and prevent leaks
-            article.close();
-        });
-    }
-
     module.exports = {
         getPageData: function (rssData, callback) {
             var pageData = [];
@@ -25,12 +12,23 @@ var read = require('node-readability');
                     'title': item.title,
                     'description': item.description,
                     'link': item.link,
-                    'pubDate': item.meta.pubDate,
-                    'html': getHTML(item.link)
+                    'pubDate': item.meta.pubDate
                 });
             });
 
             callback(null, pageData);
+        },
+        getHTML: function (url, callback) {
+            read(url, function (err, article) {
+                if (err) {
+                    callback(err);
+                }
+                // Main Article
+                callback(null, article.content);
+
+                // Close article to clean up jsdom and prevent leaks
+                article.close();
+            });
         }
     };
 })();

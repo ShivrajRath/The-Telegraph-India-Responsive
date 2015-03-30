@@ -1,4 +1,0 @@
-var "issue_no"= "/issue\s\d+/ig",
-	"issue_data"= "\b(Jan(?:uary)?|Feb(?:uary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?|).\d+.,?.\d+/ig",
-	
-
