@@ -4,7 +4,7 @@ var read = require('node-readability');
     'use strict';
 
     function getHTML(url, callback) {
-        read(url, function (err, article, meta) {
+        read(url, function (err, article) {
             if (err) {
                 callback(err);
             }
@@ -18,26 +18,19 @@ var read = require('node-readability');
 
     module.exports = {
         getPageData: function (rssData, callback) {
-            var title, link, description, html, pubDate, image, date, pageData = [];
+            var pageData = [];
 
-            rssData.forEach(function (item, index) {
+            rssData.forEach(function (item) {
                 pageData.push({
                     'title': item.title,
                     'description': item.description,
                     'link': item.link,
-                    'pubDate': item.meta.pubDate
-                })
-            })
+                    'pubDate': item.meta.pubDate,
+                    'html': getHTML(item.link)
+                });
+            });
 
             callback(null, pageData);
-            //      return {
-            //        'title': title,
-            //        'link': link,
-            //        'description': description,
-            //        'html': html,
-            //        'image': image,
-            //        'date': date
-            //      };
         }
     };
 })();
