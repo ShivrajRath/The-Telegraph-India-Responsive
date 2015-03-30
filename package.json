@@ -1,32 +1,36 @@
 {
-  "name": "FeedParserNode",
-  "version": "0.0.0",
-  "description": "RSS feed parsing in nodeJS",
-  "main": "app.js",
+  "name": "Telegraph_Responsive",
+  "version": "0.0.1",
+  "description": "A responsive application for Telegraph India",
+  "main": "./server/app.js",
   "dependencies": {
-    "request": "^2.36.0",
-    "feedparser": "^0.17.0",
-    "cheerio": "^0.17.0"
+    "cheerio": "^0.19.0",
+    "express": "^4.12.3",
+    "feedparser": "^1.0.0",
+    "node-readability": "^1.0.1",
+    "request": "^2.54.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "prestart": "npm install",
+    "start": "node ./server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShivrajRath/Node-Feed-Parsing.git"
+    "url": "https://github.com/ShivrajRath/The-Telegraph-India-Responsive.git"
   },
   "keywords": [
-    "nodejs",
-    "feed",
-    "rss",
-    "parse"
+    "Node",
+    "Angular",
+    "Angular-Material",
+    "Responsive",
+    "News"
   ],
   "author": "ShivrajRath",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ShivrajRath/Node-Feed-Parsing/issues"
+    "url": "https://github.com/ShivrajRath/The-Telegraph-India-Responsive/issues"
   },
-  "homepage": "https://github.com/ShivrajRath/Node-Feed-Parsing"
+  "homepage": "https://github.com/ShivrajRath/The-Telegraph-India-Responsive.git"
 }
