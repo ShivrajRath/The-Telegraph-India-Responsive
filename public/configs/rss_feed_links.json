@@ -1,64 +1,79 @@
 {
-  "feeds_url": [
+  "feedURLs": [
     {
       "name": "Front Page",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=3"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=3",
+      "id": "front-page"
     },
     {
       "name": "Nation",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=4"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=4",
+      "id": "nation"
     },
     {
       "name": "Calcutta",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=5"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=5",
+      "id": "calcutta"
     },
     {
       "name": "Bengal",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=8"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=8",
+      "id": "bengal"
     },
     {
       "name": "Bihar",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=22"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=22",
+      "id": "bihar"
     },
     {
       "name": "North Bengal",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=14"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=14",
+      "id": "north-bengal"
     },
     {
       "name": "Opinion",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=6"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=6",
+      "id": "opinion"
     },
     {
       "name": "Sports",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=7"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=7",
+      "id": "sports"
     },
     {
       "name": "International",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=13"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=13",
+      "id": "international"
     },
     {
       "name": "Business",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=9"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=9",
+      "id": "business"
     },
     {
       "name": "At Leisure",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=12"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=12",
+      "id": "at-leisure"
     },
     {
       "name": "Entertainment",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=20"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=20",
+      "id": "entertainment"
     },
     {
       "name": "Jharkhand",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=23"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=23",
+      "id": "jharkhand"
     },
     {
       "name": "Northeast",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=24"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=24",
+      "id": "northeast"
     },
     {
       "name": "Odisha",
-      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=25"
+      "link": "http://www.telegraphindia.com/feeds/rss.jsp?id=25",
+      "id": "odisha"
     }
   ]
 }

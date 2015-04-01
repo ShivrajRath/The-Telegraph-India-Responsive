@@ -22,39 +22,12 @@
     <![endif]-->
 </head>
 
-<body>
+<body ng-app="TelegraphApp">
   <div id="wrapper">
 
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a href="#">
-                        Start Bootstrap
-                    </a>
-        </li>
-        <li>
-          <a href="#">Dashboard</a>
-        </li>
-        <li>
-          <a href="#">Shortcuts</a>
-        </li>
-        <li>
-          <a href="#">Overview</a>
-        </li>
-        <li>
-          <a href="#">Events</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+      <div ng-include="'./app/modules/sidebar/sidebar.html'"></div>
     </div>
     <!-- /#sidebar-wrapper -->
 
@@ -63,9 +36,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
-            <h1>Simple Sidebar</h1>
-            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+            <section ui-view></section>
             <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
           </div>
         </div>
@@ -76,9 +47,16 @@
   </div>
   <!-- /#wrapper -->
 
+  <!--Third Party-->
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <!--App Files-->
+  <script src="app/app.js"></script>
+  <script src="app/modules/sidebar/sidebar.controller.js"></script>
+
   <script>
     $("#menu-toggle").click(function (e) {
       e.preventDefault();
