@@ -9,7 +9,7 @@ An attempt to make the content of The Telegraph India responsive
 ### Scope
 1. Add Logo
 2. Add Date
-3. List View
+3. News List View and News Details View
 4. Add Share Button on each article
 5. Side bar with icons
 6. Footer

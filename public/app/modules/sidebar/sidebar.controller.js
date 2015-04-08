@@ -3,16 +3,16 @@
 
   var app = angular.module('TelegraphApp');
 
-  app.controller('SideBarController', ['$http', '$scope', function ($http, $scope) {
+  app.controller('SideBarController', ['RSSListFactory', '$scope', function (RSSListFactory, $scope) {
     $scope.navList = [];
 
-    $http.get('../../configs/rss_feed_links.json').
-      success(function (data) {
-        $scope.navList = data.feedURLs;
-      }).
-      error(function (data) {
-        console.log('Error fetching the navlist. Error desc: ' + data);
-      });
+    RSSListFactory.getRSSList().
+    success(function (data) {
+      $scope.navList = data.feedURLs;
+    }).
+    error(function (data) {
+      console.log('Error fetching the navlist. Error desc: ' + data);
+    });
 
     }]);
 })();
