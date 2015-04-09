@@ -7,12 +7,11 @@
     $scope.navList = [];
 
     RSSListFactory.getRSSList().
-    success(function (data) {
-      $scope.navList = data.feedURLs;
-    }).
-    error(function (data) {
-      console.log('Error fetching the navlist. Error desc: ' + data);
-    });
-
-    }]);
+    then(function (data) {
+        $scope.navList = data.feedURLs;
+      },
+      function (data) {
+        console.log('Error fetching the navlist. Error desc: ' + data);
+      });
+  }]);
 })();
