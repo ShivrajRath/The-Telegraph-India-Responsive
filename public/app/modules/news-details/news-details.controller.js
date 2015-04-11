@@ -3,15 +3,18 @@
 
   var app = angular.module('TelegraphApp');
 
-  app.controller('NewsDetailsController', ['RSSListFactory', '$scope', function (RSSListFactory, $scope) {
-    $scope.navList = [];
+  app.controller('NewsDetailsController', ['$scope', '$state', '$stateParams', 'HTMLFetchFactory', function ($scope, $state, $stateParams, HTMLFetchFactory) {
 
-    RSSListFactory.getRSSList().
-    then(function (data) {
-        $scope.navList = data.feedURLs;
-      },
-      function (data) {
-        console.log('Error fetching the navlist. Error desc: ' + data);
+    $scope.htmlContent = '';
+    var url = 'http://www.telegraphindia.com/' + $stateParams.newsurl + '.jsp';
+    HTMLFetchFactory.getHTML(url)
+      .then(function (data) {
+        $scope.htmlContent = data;
+      }, function (err) {
+        $scope.htmlnotparsed = true;
+        console.log(err);
       });
-  }]);
+
+    }]);
+
 })();

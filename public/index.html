@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The Telegraph India">
   <meta name="author" content="ShivrajRath">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <title>The Telegraph</title>
 
   <!-- Bootstrap -->
@@ -53,14 +54,18 @@
   <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="/bower_components/angular/angular.min.js"></script>
   <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
   <script src="/bower_components/lodash/lodash.min.js"></script>
 
   <!--App Files-->
   <script src="app/app.js"></script>
+  <script src="app/modules/common/filters.js"></script>
   <script src="app/modules/sidebar/sidebar.controller.js"></script>
   <script src="app/modules/news-list/news-list.controller.js"></script>
+  <script src="app/modules/news-details/news-details.controller.js"></script>
   <script src="app/modules/common/factory/rss-list.factory.js"></script>
   <script src="app/modules/common/factory/rss-enrich.factory.js"></script>
+  <script src="app/modules/common/factory/html-fetch.factory.js"></script>
 
   <script>
     $("#menu-toggle").click(function (e) {

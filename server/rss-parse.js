@@ -14,7 +14,6 @@ var request = require('request');
 
       req.on('error', function (err) {
         console.log('Request Error ' + err);
-        callback(err);
       });
 
       req.on('response', function (res) {
@@ -30,7 +29,7 @@ var request = require('request');
 
       feedparser.on('error', function (err) {
         console.log('Feedparser Error ' + err);
-        callback(err);
+        // callback(err);
       });
 
       feedparser.on('readable', function () {
@@ -44,7 +43,11 @@ var request = require('request');
       });
 
       feedparser.on('end', function () {
-        callback(null, data);
+        if (data.length) {
+          callback(null, data);
+        } else {
+          callback('Data not available at present');
+        }
       });
     }
   };

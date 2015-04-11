@@ -1,5 +1,14 @@
+<div>
+  <h2>{{newsTitle}}</h2>
+</div>
+<div ng-show="noData">
+  <p>We are sorry. No news available in this section now.</p>
+  <br>
+  <br>
+</div>
+
 <div ng-repeat="news in newsList">
   <h3>{{news.title}}</h3>
   <p>{{news.description}}</p>
-  <a href="/newsdetails/" {{news.link}}>More Details</a>
-</div>
+  <a ng-href="/newsdetails{{news.link | cleanurl}}">More Details</a>
+  </div>

@@ -21,13 +21,14 @@
             res.status(500).json({
               error: 'HTML extraction failed'
             });
+          } else {
+            res.set({
+              'Content-Encoding': 'utf-8',
+              'charset': 'utf-8',
+              'Content-Type': 'text/html'
+            });
+            res.send(data);
           }
-          res.set({
-            'Content-Encoding': 'utf-8',
-            'charset': 'utf-8',
-            'Content-Type': 'text/html'
-          });
-          res.send(data);
         });
       } else {
         res.status(500).json({
@@ -54,8 +55,9 @@
                 res.status(500).json({
                   error: 'Page enrichment failed'
                 });
+              } else {
+                res.json(data);
               }
-              res.json(data);
             });
           }
         });
