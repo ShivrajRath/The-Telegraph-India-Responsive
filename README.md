@@ -4,6 +4,7 @@ An attempt to make the content of The Telegraph India responsive
 ### To Do
 
 1. HTML enrichment and rss Data fetch via web workers
+2. Application should not fail on error. ('Can\'t set headers after they are sent.');
 
 
 ### Scope
