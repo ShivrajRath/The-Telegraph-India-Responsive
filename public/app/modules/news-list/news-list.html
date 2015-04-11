@@ -1,5 +1,5 @@
 <div>
-  <h2>{{newsTitle}}</h2>
+  <h2>{{newsTitle}}</h2><br>
 </div>
 <div ng-show="noData">
   <p>We are sorry. No news available in this section now.</p>
@@ -8,7 +8,7 @@
 </div>
 
 <div ng-repeat="news in newsList">
-  <h3>{{news.title}}</h3>
+  <h4>{{news.title}}</h4>
   <p>{{news.description}}</p>
   <a ng-href="/newsdetails{{news.link | cleanurl}}">More Details</a>
-  </div>
+</div>

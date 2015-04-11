@@ -8,6 +8,13 @@ An attempt to make the content of The Telegraph India responsive
 3. Test all the sections independently
 4. Remove all data hardcoding, esp. the URL hardcoded
 5. Provide code comments
+6. Why images are not coming properly?
+7. Why UTF-8 encoding is not getting applied?
+
+### To Do [UI]
+1. Change caption font
+2. News paper font
+3. Change colors of links and Headers
 
 ### Scope
 1. Add Logo
@@ -23,3 +30,6 @@ An attempt to make the content of The Telegraph India responsive
 8. Quote of the day
 9. More stories from a section in article page
 10.Font should be a newspaper font
+11. Add a breadcrumb
+12. Time ago for the news list
+13. Highlight the selected section

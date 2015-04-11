@@ -1,8 +1,8 @@
 <ul class="sidebar-nav" ng-controller="SideBarController">
   <li class="sidebar-brand">
-    <a href="#">The Telegraph</a>
+    <a href="/">The Telegraph</a>
   </li>
   <li ng-repeat="navItem in navList">
-    <a ng-href="newslist/{{navItem.id}}">{{navItem.name}}</a>
+    <a ng-href="newslist/{{navItem.id}}">{{navItem.name | uppercase}}</a>
   </li>
 </ul>

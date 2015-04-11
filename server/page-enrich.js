@@ -36,7 +36,10 @@ var read = require('node-readability');
           callback(err);
         }
         // Main Article
-        callback(null, article.content);
+        callback(null, {
+          content: article.content,
+          title: article.title
+        });
 
         // Close article to clean up jsdom and prevent leaks
         article.close();

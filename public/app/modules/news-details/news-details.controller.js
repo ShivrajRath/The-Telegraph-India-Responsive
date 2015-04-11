@@ -5,11 +5,17 @@
 
   app.controller('NewsDetailsController', ['$scope', '$state', '$stateParams', 'HTMLFetchFactory', function ($scope, $state, $stateParams, HTMLFetchFactory) {
 
+    $scope.title = '';
     $scope.htmlContent = '';
     var url = 'http://www.telegraphindia.com/' + $stateParams.newsurl + '.jsp';
     HTMLFetchFactory.getHTML(url)
       .then(function (data) {
-        $scope.htmlContent = data;
+        if (data) {
+          $scope.title = data.title;
+          $scope.htmlContent = data.content;
+        } else {
+          $scope.htmlnotparsed = true;
+        }
       }, function (err) {
         $scope.htmlnotparsed = true;
         console.log(err);
