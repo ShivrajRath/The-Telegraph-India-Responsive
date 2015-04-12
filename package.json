@@ -1,6 +1,6 @@
 {
   "name": "Telegraph_Responsive",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A responsive application for Telegraph India",
   "main": "./server/app.js",
   "dependencies": {
