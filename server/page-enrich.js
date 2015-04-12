@@ -32,17 +32,16 @@ var read = require('node-readability');
      */
     getHTML: function (url, callback) {
       read(url, function (err, article) {
-        if (err) {
+        if (err || !article) {
           callback(err);
+        } else { // Main Article
+          callback(null, {
+            title: article.title,
+            content: article.content
+          });
+          // Close article to clean up jsdom and prevent leaks
+          article.close();
         }
-        // Main Article
-        callback(null, {
-          content: article.content,
-          title: article.title
-        });
-
-        // Close article to clean up jsdom and prevent leaks
-        article.close();
       });
     }
   };

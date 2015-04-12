@@ -11,36 +11,26 @@
 
   app.controller('NewsListController', ['$scope', '$state', '$stateParams', 'RSSEnrichFactory', 'RSSListFactory', function ($scope, $state, $stateParams, RSSEnrichFactory, RSSListFactory) {
 
-    var newsId = $stateParams.newsId,
-      rssURL = '';
-
+    $scope.newsId = $stateParams.newsId;
+    var rssURL = '';
     $scope.newsTitle = '';
-
     $scope.newsList = [];
-    RSSListFactory.getRSSList().
+
+    RSSListFactory.getRSSSection($scope.newsId).
     then(function (data) {
-        var rssSection = _.find(data.feedURLs, function (el) {
-          return el.id === newsId;
-        });
-        if (!rssSection) {
-          // Route to home page if not a valid RSS response
-          $state.go('home');
-        } else {
-          $scope.newsTitle = rssSection.name;
-          // Clean the URL
-          rssURL = rssSection.link;
-          RSSEnrichFactory.getDetails(rssURL).
-          then(function (data) {
-            $scope.newsList = data;
-          }, function (err) {
-            $scope.noData = true;
-            console.log(err);
-          });
-        }
-      },
-      function (err) {
+      $scope.newsTitle = data.name;
+      // Clean the URL
+      rssURL = data.link;
+      RSSEnrichFactory.getDetails(rssURL).
+      then(function (data) {
+        $scope.newsList = data;
+      }, function (err) {
+        $scope.noData = true;
         console.log(err);
       });
+    }, function () {
+      $state.go('home');
+    });
 
     }]);
 

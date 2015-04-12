@@ -10,6 +10,7 @@ An attempt to make the content of The Telegraph India responsive
 5. Provide code comments
 6. Why images are not coming properly?
 7. Why UTF-8 encoding is not getting applied?
+8. Home page as Front Page
 
 ### To Do [UI]
 1. Change caption font
@@ -33,3 +34,4 @@ An attempt to make the content of The Telegraph India responsive
 11. Add a breadcrumb
 12. Time ago for the news list
 13. Highlight the selected section
+

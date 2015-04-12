@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var app = angular.module('TelegraphApp', ['ng', 'ui.router', 'ngSanitize']);
+  var app = angular.module('TelegraphApp', ['ng', 'ui.router']);
 
   //Application Router
   app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -10,8 +10,7 @@
 
     $stateProvider
       .state('home', {
-        url: '/',
-        template: '<h1>Hello World</h1>'
+        url: 'newslist/front-page'
       })
       .state('news-list', {
         url: '/newslist/:newsId',
@@ -19,10 +18,11 @@
         controller: 'NewsListController'
       })
       .state('news-details', {
-        url: '/newsdetails/{newsurl:.*}',
+        url: '/newsdetails/:newsId/{newsurl:.*}',
         templateUrl: './app/modules/news-details/news-details.html',
         controller: 'NewsDetailsController'
       });
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/newslist/front-page');
   });
+
 })();

@@ -8,5 +8,17 @@
   <div>
     <h2>{{title}}</h2>
   </div>
-  <div ng-bind-html="htmlContent"></div>
+
+  <span class='st_facebook' displayText='Facebook'></span>
+  <span class='st_twitter' displayText='Tweet'></span>
+  <span class='st_googleplus' displayText='Google +'></span>
+  <span class='st_flipboard' displayText='Flipboard'></span>
+  <span class='st_pocket' displayText='Pocket'></span>
+  <span class='st_whatsapp' displayText='WhatsApp'></span>
+  <span class='st_email' displayText='Email'></span>
+  <span class='st_print' displayText='Print'></span>
+  <br>
+  <br>
+  <div ng-bind-html="htmlContent | unsafe"></div>
+
 </div>

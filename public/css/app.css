@@ -5,3 +5,18 @@ body,
 html {
   font-family: 'News Cycle', sans-serif;
 }
+
+a {
+  color: #BDC3C7;
+}
+
+a:focus,
+a:hover {
+  color: #D2D7D3;
+}
+
+.caption,
+em {
+  font-style: italic;
+  display: none;
+}

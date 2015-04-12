@@ -7,8 +7,8 @@
   <br>
 </div>
 
-<div ng-repeat="news in newsList">
+<div ng-repeat="news in newsList" class="col-sm-6">
   <h4>{{news.title}}</h4>
   <p>{{news.description}}</p>
-  <a ng-href="/newsdetails{{news.link | cleanurl}}">More Details</a>
+  <a ng-href="/newsdetails/{{newsId}}{{news.link | cleanurl}}">More Details</a>
 </div>
