@@ -6,7 +6,7 @@
 
 <div class="row">
   <div>
-    <h2>{{title}}</h2>
+    <div class="title">{{title}}</div>
   </div>
 
   <span class='st_facebook' displayText='Facebook'></span>
@@ -19,6 +19,6 @@
   <span class='st_print' displayText='Print'></span>
   <br>
   <br>
-  <div ng-bind-html="htmlContent | unsafe"></div>
+  <div ng-bind-html="htmlContent | unsafe" class="news-details"></div>
 
 </div>

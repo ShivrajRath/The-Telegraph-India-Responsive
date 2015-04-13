@@ -21,6 +21,22 @@ em {
   display: none;
 }
 
-.news-details img{
+.news-details img {
   display: none;
+}
+
+.title {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+  .logo {
+    width: 200px;
+    margin: 20px 0 20px 0;
+  }
 }
