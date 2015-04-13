@@ -4,6 +4,7 @@
   "description": "A responsive application for Telegraph India",
   "main": "./server/app.js",
   "dependencies": {
+    "bower": "*",
     "cheerio": "^0.19.0",
     "express": "^4.12.3",
     "feedparser": "^1.0.0",
