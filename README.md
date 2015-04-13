@@ -3,14 +3,13 @@ An attempt to make the content of The Telegraph India responsive
 
 ### To Do
 
-1. HTML enrichment and rss Data fetch via web workers
-2. Check all the error scenarios on list and details section
-3. Test all the sections independently
-4. Remove all data hardcoding, esp. the URL hardcoded
-5. Provide code comments
-6. Why images are not coming properly?
-7. Why UTF-8 encoding is not getting applied?
-8. Home page as Front Page
+* HTML enrichment and rss Data fetch via web workers
+* Test all the sections independently
+* Remove all data hardcoding, esp. the URL hardcoded
+* Provide code comments
+* Why images are not coming properly?
+* Why UTF-8 encoding is not getting applied?
+* Add node engine to package.json
 
 ### To Do [UI]
 1. Change caption font

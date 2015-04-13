@@ -20,3 +20,7 @@ em {
   font-style: italic;
   display: none;
 }
+
+.news-details img{
+  display: none;
+}
