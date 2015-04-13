@@ -13,6 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "prestart": "bower install && npm install",
+    "postinstall": "bower install && npm install",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
