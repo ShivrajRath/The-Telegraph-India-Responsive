@@ -15,6 +15,7 @@ An attempt to make the content of The Telegraph India responsive
 1. Change caption font
 2. News paper font
 3. Change colors of links and Headers
+4. The sidebar should be scrollable
 
 ### Scope
 1. Add Logo
